@@ -113,7 +113,7 @@ main .info .titulo b{
 }
 main .info .titulo a{
 	position: absolute;
-	bottom: 0;
+	bottom: -3em;
 	left: 0
 }
 main .info .titulo a button{
@@ -558,14 +558,14 @@ html{
 }
 @media screen and (max-width: 465px){
  	header{
- 		font-size: 6px
+ 		font-size: 8px;	
  	}
  	main .info,
  	main .info .perfil{
  		font-size: 4px
  	}
  	main .info{
- 		top: 10em
+ 		top: 14em
  	}
  	.work{
 		font-size: 6px
@@ -578,7 +578,11 @@ html{
  	text-align: center;
  	padding: 1em 0;
  	border-bottom: .5px solid #aaa
- }
+ 	}
+ 	.work .contenedor-articulos .articulo i{
+	font-size: 3em;
+	margin: 2em;
+	}
 
 }
 @media screen and (max-width: 300px){
