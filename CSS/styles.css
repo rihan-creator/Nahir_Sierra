@@ -28,11 +28,28 @@
 header{
 	font-size: 10px;
 	background: #222;
-	z-index: 100;
+	z-index: 200;
 	width: 100vw;
 	height: 5em;
 	position: fixed;
 }
+header button{
+	position: absolute;
+	right: 2em;
+	top:calc(50% - 2em);
+	width: 4em ;
+	height: 4em;
+	border: none;
+	background: none;
+	border-radius: 50%;
+	box-shadow: 0 0 5px #000;
+	transition: ease all .4s;
+	cursor: pointer;
+}
+header button:focus{
+	box-shadow: inset 0 0 10px #000;
+}
+
 header img{
 	font-size: 1em;
 	top: 10%;
@@ -93,7 +110,7 @@ main .info{
 }
 main .info .titulo{ 
 	font-size: 1em;
-	height:40em;
+	height:100%;
 	min-height: 40em;
 	z-index: 50;
 	transition: ease all .4s
@@ -110,11 +127,7 @@ main .info .titulo b{
 	font-weight: bold;
 	font-size: 2em;
 	font-style: normal;
-}
-main .info .titulo a{
-	position: absolute;
-	bottom: -3em;
-	left: 0
+	height: 2em
 }
 main .info .titulo a button{
 	margin-top: 10em;
@@ -247,6 +260,7 @@ main .info .perfil img{
 	color: #fff;
 	cursor: pointer;
 	transition:.2s ease all; 
+	z-index: 100
 }
 
 .enlases-recomendados .principal .flecha-izquierda:hover,
@@ -278,14 +292,14 @@ background:#060
 		max-height: 10em;
 		transition: .3s ease all;
 		box-shadow: 5px 5px 10px rgba(0,0,0, .3);
-		opacity: 0.8;
+		opacity: 0.5;
 		transition-delay: .3s
 }
 .contenedor-carrusel .carrusel .pelicula:hover{
 		transform: scale(1.2);
 		transform-origin: center;
 		opacity: 1;
-		z-index: 100
+		z-index: 50
 }
 .contenedor-carrusel .carrusel .pelicula img{
 		width: 100%;
@@ -325,7 +339,7 @@ background:#060
 	margin: 1em .5em;
 	color: #bbb;
 	padding: 1em .5em ;
-	border-top:1px solid #ccc ;
+	border-bottom:1px solid #ccc ;
 }
 .work .contenedor-articulos .articulo img{
 	float: left;
@@ -335,16 +349,18 @@ background:#060
 	object-fit: contain;
 	border-radius: 1em;
 }
+.work .contenedor-articulos .articulo p{
+	text-align: justify;
+}
 .work .contenedor-articulos .articulo h4{
 	font-size: 3em;
 	text-align: center;
 }
-.work .contenedor-articulos .articulo i{
+.work .contenedor-articulos .articulo p i{
 	font-size: 1.5em;
 	margin: 1em 0;
-	text-align: justify;
 }
-.contenedor-articulos .articulo i b{
+.contenedor-articulos .articulo p i b{
 	font-size: 1em
 }
 /*----------------Skills------------*/
@@ -528,7 +544,10 @@ html{
  		top: 10em
  	}
  	.contenedor-titulo-controles{
-		justify-content: center;
+ 		justify-content: center;
+ 	}
+ 	.contenedor-titulo-controles h3{
+	text-align: center;
 	}
 	.enlases-recomendados .contenedor-carrusel{
 		overflow: visible;
@@ -547,14 +566,11 @@ html{
 	}
 	.enlases-recomendados .contenedor-carrusel .carrusel img{
 		max-height: 150px	}
-
 	.enlases-recomendados .indicadores, 
 	.enlases-recomendados .flecha-derecha,
 	.enlases-recomendados .flecha-izquierda{
 		display: none;
 	}
-	
-	
 }
 @media screen and (max-width: 465px){
  	header{
@@ -579,11 +595,9 @@ html{
  	padding: 1em 0;
  	border-bottom: .5px solid #aaa
  	}
- 	.work .contenedor-articulos .articulo i{
-	font-size: 3em;
-	margin: 2em;
+ 	.work .contenedor-articulos .articulo p i {
+	font-size: 2em;
 	}
-
 }
 @media screen and (max-width: 300px){
  	header{
