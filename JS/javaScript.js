@@ -68,7 +68,7 @@ const cargar = (entradas,observador)=>{
 const observer = new IntersectionObserver(cargar, {
   root: null,
   rootMargin: '0px',
-  threshold: 0.1,
+  threshold: 0.230,
 });
 // lamados a los observadores
 observer.observe(article1);
