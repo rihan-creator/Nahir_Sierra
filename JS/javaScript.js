@@ -79,8 +79,8 @@ observer.observe(article5);
 // Comando de animación de escritura
 
 var options = {
-  strings: ['<i class="titulo-spam">Programador web</i>','<i class="titulo-spam">Diseñador grafico</i>','<i class="titulo-spam">Community manager</i>'],
-  typeSpeed: 70,
+  strings: ['<i class="titulo-spam">Programador web</i>','<i class="titulo-spam">Diseñador gráfico</i>','<i class="titulo-spam">Community manager</i>'],
+  typeSpeed: 90,
   cursorChar:'<i class="titulo-spam">|</i>',
   loop: true,
   loopCount: Infinity,
